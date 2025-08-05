@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+
 
 const navLinks = [
     { name: "Register", href: "/auth/register" },
@@ -14,7 +16,7 @@ export default function AuthLayout({ children, }: { children: React.ReactNode })
                         {link.name}
                     </Link>
                 ))}
-            </nav>
+            </nav> 
             <main>{children}</main>
         </div>
     );
